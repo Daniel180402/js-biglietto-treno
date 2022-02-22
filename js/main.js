@@ -31,10 +31,12 @@ price = km * basekm;
 if(age < 18){
     discount = (price / 100) * 20;
     finalprice = price - discount;
+    document.getElementById("age-percent").innerHTML = "You have received a 20% discount because you are under 18 years old";
 }
 else if(age > 65){
     discount = (price / 100) * 40;
     finalprice = price - discount;
+    document.getElementById("age-percent").innerHTML = "You have received a 40% discount because you are over 65 years old";
 }
 else{
     finalprice = price;
